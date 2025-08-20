@@ -20,8 +20,16 @@ export default function Routes()
                     options={{title: 'LOGIN', headerTitleAlign: 'center', headerStyle: { backgroundColor: '#3498DB'}, headerTitleStyle: {fontWeight: 'bold', color: '#fff'}}}
                     
                 />
-                {/* <Stack.Screen/> */}
-                {/* <Stack.Screen/> */}
+                <Stack.Screen 
+                    name="Main"
+                    component={Main}
+                    options={{title: 'GitHub VIEWER', headerTitleAlign: 'center', headerStyle:{backgroundColor: '#3498DB'}, headerTitleStyle: {fontWeight: 'bold', color: '#fff'}}}
+                />
+                <Stack.Screen
+                    name="User"
+                    component={User}
+                    options={{title: 'Perfil do Usuário', headerTitleAlign: 'center', headerStyle:{backgroundColor: '#3498DB'}, headerTitleStyle: {fontWeight: 'bold', color: '#fff'}}}
+                />
             </Stack.Navigator>
         </NavigationContainer>
     )
