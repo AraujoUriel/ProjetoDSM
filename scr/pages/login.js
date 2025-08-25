@@ -20,6 +20,10 @@ const Login = () => {
             <TextInput style={styles.input} placeholder="Email..." value={email} onChangeText={setEmail} />
        
             <TextInput style={styles.input} placeholder="Senha..." value={password} onChangeText={setPassword} />
+
+            <TouchableOpacity style={styles.button} onPress={handleLogin}>
+                <Text style={styles.buttonText}>Entrar</Text>
+            </TouchableOpacity>
         </View>
     )
 

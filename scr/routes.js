@@ -21,12 +21,12 @@ export default function Routes()
                     
                 />
                 {/* <Stack.Screen 
-                    name="Main"
+                    name="main"
                     component={Main}
                     options={{title: 'GitHub VIEWER', headerTitleAlign: 'center', headerStyle:{backgroundColor: '#3498DB'}, headerTitleStyle: {fontWeight: 'bold', color: '#fff'}}}
                 /> */}
                 {/* <Stack.Screen
-                    name="User"
+                    name="user"
                     component={User}
                     options={{title: 'Perfil do Usuário', headerTitleAlign: 'center', headerStyle:{backgroundColor: '#3498DB'}, headerTitleStyle: {fontWeight: 'bold', color: '#fff'}}}
                 /> */}
