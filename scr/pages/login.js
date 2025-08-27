@@ -26,7 +26,6 @@ const Login = () => {
             </TouchableOpacity>
         </View>
     )
-
 }
 
 const styles = StyleSheet.create({
