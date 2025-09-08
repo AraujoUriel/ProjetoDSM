@@ -77,6 +77,26 @@ export default class Main extends Component{
                         )}
                     </SubmitButton>
                 </Form>
+                <List 
+                    data={users}
+                    keyExtractor={(user) => user.login}
+                    renderItem={({item}) => (
+                        <User>
+                            <Avatar source={{uri : item.avatar}}/>
+                            <Name>{item.name}</Name>
+                            <Bio>{item.bio}</Bio>
+                            <ProfileButton onPress={() => {this.props.navigation.navigate('User', {user : item});}}>
+                                <ProfileButtonText>Ver Perfil</ProfileButtonText>
+                            </ProfileButton>
+
+                            <ProfileButton
+                                onPress={() => {
+                                    this.setState({users: users.filter(user => user.login !== item.login)})
+                                }}style={{backgroundColor: "#FFC0CB"}}
+                            >Remover</ProfileButton>
+                        </User>
+                    )}
+                />
             </Container>
         )
     }

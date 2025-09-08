@@ -9,7 +9,7 @@ const Login = () => {
 
     const handleLogin = () =>  {
         if(email === '' && password === ''){
-            navigation.navigate('Main');
+            navigation.navigate('main');
         }else{
             Alert.alert('Email ou Senha incorretos')
         }
